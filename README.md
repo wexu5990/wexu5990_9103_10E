@@ -7,5 +7,6 @@ In my approach of the individual work, I am doing the part of employing timers a
 
 To enhance drawApples() function with animation using timers and events, I add setTimeout() into the function to animate the drawing of apples at different times, creating a sequence effect. 
 
+
 I also add the animateBranches() by using setInterval() function to incrementally update the growthFactor and calls redraw() to refresh the drawing. This makes the branches appear to grow over time.
 As time passed, the colour of the apples and the ellipse on the bottom change with the growing of branches and random appearance of apples, until the branches grow completely. 
