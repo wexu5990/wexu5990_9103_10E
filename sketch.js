@@ -83,6 +83,7 @@ function setup() {
 
   colorMode(RGB); 
   noLoop();
+  animateBranches();
 }
 
 /*
@@ -334,5 +335,12 @@ function lineEllipseIntersection(cx, cy, r, x1, y1, x2, y2) {
     }
   }
   return intersections;
+}
+function animateBranches() {
+  let timer = setInterval(() => {
+    growthFactor += 0.05;
+    redraw(); // Redraw the canvas with updated branch lengths
+    if (growthFactor >= 1) clearInterval(timer);
+  }, 100);
 }
 
